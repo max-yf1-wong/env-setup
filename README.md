@@ -39,14 +39,14 @@ keytool -import -alias nexus -file nexus.cer -keystore "%JAVA_HOME%/lib/security
 
 1. Install [google-java-format](https://plugins.jetbrains.com/plugin/8527-google-java-format) and [save actions](https://plugins.jetbrains.com/plugin/7642-save-actions) plugins.  
    File -> Settings -> Plugins -> Marketplace -> Search `google-java-format` and `save actions` -> Install -> Restart IDE
-   ![image info](./images/settings.png)  
+   ![image info](./images/settings.PNG)  
    After installation, the two pulgins should be in the installed list.  
-   ![image info](./images/installed.png)
+   ![image info](./images/installed.PNG)
 1. Config `New Project Settings`.  
    File -> New Project Settings -> Settings for New Projects... -> Other Settings  
    Follow the settings as shown in the screens. (4 spaces indent for android style)  
-   ![image info](./images/google-java-format.png)  
-   ![image info](./images/save-actions.png)
+   ![image info](./images/google-java-format.PNG)  
+   ![image info](./images/save-actions.PNG)
 1. Now intellij will auto format your code on save.
 
 ### Enable Hot Reload
@@ -55,13 +55,13 @@ To enable spring-boot-devtools for easier development, we need to do the followi
 
 1. File -> New Project Settings -> Settings for New Projects... -> Build, Execution, Deployment -> Compiler  
    Check `Build Project Automatically`  
-   ![image info](./images/build-auto.png)
+   ![image info](./images/build-auto.PNG)
 1. SHIFT+Ctrl+A -> registry-> compiler.automake.allow.when.app.running  
-   ![image info](./images/automake.png)
+   ![image info](./images/automake.PNG)
 
 ### Enable Lombok
 
 [Lombok](https://projectlombok.org/) saves us many clumsy getter/setter and brings us convenient annotations.
 
 1. File -> New Project Settings -> Settings for New Projects... -> Build, Execution, Deployment -> Compiler -> Annotation Processors  
-   ![image info](./images/annotation-processor.png)
+   ![image info](./images/annotation-processor.PNG)
