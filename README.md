@@ -39,7 +39,7 @@ keytool -import -alias nexus -file nexus.cer -keystore "%JAVA_HOME%/lib/security
 
 1. Install [google-java-format](https://plugins.jetbrains.com/plugin/8527-google-java-format) and [save actions](https://plugins.jetbrains.com/plugin/7642-save-actions) plugins.  
    File -> Settings -> Plugins -> Marketplace -> Search `google-java-format` and `save actions` -> Install -> Restart IDE
-   ![image info](./images/settings.PNG)  
+   ![image info](./images/settings.png)  
    After installation, the two pulgins should be in the installed list.  
    ![image info](./images/installed.PNG)
 1. Config `New Project Settings`.  
