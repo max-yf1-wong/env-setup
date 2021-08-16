@@ -23,11 +23,12 @@ If you find the nexus proxy does not include some third party maven repositories
 </settings>
 ```
 
-2. Import nexus cert from this repo into java cacerts (need admin rights)
+2. Import nexus cert from this repo into java cacerts (need admin rights). cacerts default password: `changeit`
 
 ```
 keytool -import -alias nexus -file nexus.cer -keystore "%JAVA_HOME%/lib/security/cacerts"
 ```
+
 
 3. Get a maven project and do `mvn compile` should see maven downloading dependencies from nexus instead of maven central.
 
@@ -63,5 +64,8 @@ To enable spring-boot-devtools for easier development, we need to do the followi
 
 [Lombok](https://projectlombok.org/) saves us many clumsy getter/setter and brings us convenient annotations.
 
-1. File -> New Project Settings -> Settings for New Projects... -> Build, Execution, Deployment -> Compiler -> Annotation Processors  
-   ![image info](./images/annotation-processor.PNG)
+1. File -> New Project Settings -> Settings for New Projects... -> Build, Execution, Deployment -> Compiler -> Annotation Processors
+
+- Enable annotation processing box is checked
+- Obtain processors from project classpath option is selected
+  ![image info](./images/annotation-processor.PNG)
