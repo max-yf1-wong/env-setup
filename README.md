@@ -20,6 +20,20 @@ If you find the nexus proxy does not include some third party maven repositories
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>
+    <profiles>
+        <profile>
+            <id>nexus</id>
+            <repositories>
+                <repository>
+                    <id>nexus</id>
+                    <url>https://nexus.urcicd.sitelb.bpu.pccw.com/repository/maven/</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>nexus</activeProfile>
+    </activeProfiles>
 </settings>
 ```
 
